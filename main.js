@@ -13,11 +13,15 @@ function declareForHoneyLoop() {
   var loops = 0;
 
   // Write code below me:
-
+  for (loops = 0; loops < 10; loops++) {
+    //console.log(loops)
+  }
   // Write code above me ^^^
 
   return loops;
 }
+
+//declareForHoneyLoop();
 
 /* Task 2
 
@@ -29,27 +33,37 @@ function declareDoWhileHoneyLoop() {
   var loops = 0;
 
   // Write code below me:
-
+  do {
+    loops = loops + 1;
+  } while (loops < 10);
+  //console.log(loops);
   // Write code above me ^^^
 
   return loops;
 }
+
+//declareDoWhileHoneyLoop()
 
 /* Task 3
 
 The monotony inside the Honey Loops factory is oppressive, and you leave each day with the buzzing sound of bees itched on to your brain.
 Yet another new process has been implemented, and you willlessly oblige. Inside the commented section of the function 
-'declareWhileHoneyLoop', declare a 'while' loop. The loop should increment the loops by 1 until the loops reache the value of 10. */
+'declareWhileHoneyLoop', declare a 'while' loop. The loop should increment the loops by 1 until the loops reach the value of 10. */
 
 function declareWhileHoneyLoop() {
   var loops = 0;
 
   // Write code below me:
-
+  while (loops < 10) {
+    loops++;
+    //console.log(loops);
+  }
   // Write code above me ^^^
 
   return loops;
 }
+
+//declareWhileHoneyLoop()
 
 /* Task 4
 
@@ -61,11 +75,17 @@ function declareHoneyLoopLabel() {
   var sevenLoopsAtATime = 0;
 
   // Write code below me:
-
+  while (sevenLoopsAtATime < 10) {
+    sevenLoopsAtATime++;
+    // let newSeven = sevenLoopsAtATime * 7;
+    // console.log(newSeven); //????;
+  }
   // Write code above me ^^^
 
   return sevenLoopsAtATime;
 }
+
+//declareHoneyLoopLabel()
 
 /* Level 2
 
@@ -136,7 +156,7 @@ would become:
 var keyNames = 'lastName, firstName,' */
 
 function getKeyNames(object) {
-  var keyNames = '';
+  var keyNames = "";
 
   // Write code below me:
 
@@ -157,7 +177,7 @@ would become:
 var arrayList = 'apple, pear, peach,' */
 
 function generateArrayList(array) {
-  var arrayList = '';
+  var arrayList = "";
 
   // Write code below me:
 
@@ -166,13 +186,13 @@ function generateArrayList(array) {
   return arrayList;
 }
 
-module.exports = {
-  declareForHoneyLoop,
-  declareDoWhileHoneyLoop,
-  declareWhileHoneyLoop,
-  declareHoneyLoopLabel,
-  declareHoneyBreakStatement,
-  alternateIngredients,
-  getKeyNames,
-  generateArrayList,
-};
+// module.exports = {
+//   declareForHoneyLoop,
+//   declareDoWhileHoneyLoop,
+//   declareWhileHoneyLoop,
+//   declareHoneyLoopLabel,
+//   declareHoneyBreakStatement,
+//   alternateIngredients,
+//   getKeyNames,
+//   generateArrayList,
+// };
