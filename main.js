@@ -179,9 +179,11 @@ function getKeyNames(object) {
   var keyNames = "";
 
   // Write code below me:
-  for (let keyNames in object) {
-    console.log(`${keyNames}, ${object}`);
+  for (let property in object) {
+    keyNames = `${keyNames} ${object[property]},`;
+    keyNames = keyNames.trim();
   }
+  //console.log(keyNames);
   // Write code above me ^^^
 
   return keyNames;
