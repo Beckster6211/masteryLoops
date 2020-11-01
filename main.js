@@ -14,14 +14,14 @@ function declareForHoneyLoop() {
 
   // Write code below me:
   for (loops = 0; loops < 10; loops++) {
-    //console.log(loops)
+    //console.log(loops);
   }
   // Write code above me ^^^
 
   return loops;
 }
 
-//declareForHoneyLoop();
+//declareForHoneyLoop()
 
 /* Task 2
 
@@ -37,6 +37,7 @@ function declareDoWhileHoneyLoop() {
     loops = loops + 1;
   } while (loops < 10);
   //console.log(loops);
+
   // Write code above me ^^^
 
   return loops;
@@ -75,10 +76,9 @@ function declareHoneyLoopLabel() {
   var sevenLoopsAtATime = 0;
 
   // Write code below me:
-  while (sevenLoopsAtATime < 10) {
-    sevenLoopsAtATime++;
-    // let newSeven = sevenLoopsAtATime * 7;
-    // console.log(newSeven); //????;
+  honeyLoopsComeInSevens: for (let index = 0; index <= 10; index++) {
+    sevenLoopsAtATime = index * 7;
+    console.log(sevenLoopsAtATime);
   }
   // Write code above me ^^^
 
@@ -115,7 +115,7 @@ function declareHoneyBreakStatement(
   var updatedHypnosisArray = hypnosisArray;
 
   // Write code below me:
-
+  for ()
   // Write code above me ^^^
 
   return updatedHypnosisArray;
@@ -159,11 +159,15 @@ function getKeyNames(object) {
   var keyNames = "";
 
   // Write code below me:
-
+  for (let keyNames in object) {
+    console.log(`${keyNames}, ${object}`);
+  }
   // Write code above me ^^^
 
   return keyNames;
 }
+
+//getKeyNames()
 
 /* Task 8
 
@@ -180,19 +184,20 @@ function generateArrayList(array) {
   var arrayList = "";
 
   // Write code below me:
-
+  for (let element of array) {
+  }
   // Write code above me ^^^
 
   return arrayList;
 }
 
-// module.exports = {
-//   declareForHoneyLoop,
-//   declareDoWhileHoneyLoop,
-//   declareWhileHoneyLoop,
-//   declareHoneyLoopLabel,
-//   declareHoneyBreakStatement,
-//   alternateIngredients,
-//   getKeyNames,
-//   generateArrayList,
-// };
+module.exports = {
+  declareForHoneyLoop,
+  declareDoWhileHoneyLoop,
+  declareWhileHoneyLoop,
+  declareHoneyLoopLabel,
+  //   declareHoneyBreakStatement,
+  //   alternateIngredients,
+  //   getKeyNames,
+  //   generateArrayList,
+};
