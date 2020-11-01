@@ -78,7 +78,7 @@ function declareHoneyLoopLabel() {
   // Write code below me:
   honeyLoopsComeInSevens: for (let index = 0; index <= 10; index++) {
     sevenLoopsAtATime = index * 7;
-    console.log(sevenLoopsAtATime);
+    //console.log(sevenLoopsAtATime);
   }
   // Write code above me ^^^
 
@@ -113,13 +113,24 @@ function declareHoneyBreakStatement(
   breakFreeValue
 ) {
   var updatedHypnosisArray = hypnosisArray;
+  console.log(hypnosisArray);
+  console.log(befuddlementValue);
+  console.log(breakFreeValue);
 
   // Write code below me:
-  for ()
+  for (let index = 0; index < hypnosisArray.length; index++) {
+    if (updatedHypnosisArray[index] === breakFreeValue) {
+      break;
+    }
+    updatedHypnosisArray[index] = hypnosisArray[index] + befuddlementValue;
+    console.log(updatedHypnosisArray);
+  }
   // Write code above me ^^^
 
   return updatedHypnosisArray;
 }
+
+//declareHoneyBreakStatement()
 
 /* Task 6
 
@@ -196,7 +207,7 @@ module.exports = {
   declareDoWhileHoneyLoop,
   declareWhileHoneyLoop,
   declareHoneyLoopLabel,
-  //   declareHoneyBreakStatement,
+  declareHoneyBreakStatement,
   //   alternateIngredients,
   //   getKeyNames,
   //   generateArrayList,
