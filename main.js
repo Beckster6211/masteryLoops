@@ -113,9 +113,9 @@ function declareHoneyBreakStatement(
   breakFreeValue
 ) {
   var updatedHypnosisArray = hypnosisArray;
-  console.log(hypnosisArray);
-  console.log(befuddlementValue);
-  console.log(breakFreeValue);
+  // console.log(hypnosisArray);
+  // console.log(befuddlementValue);
+  // console.log(breakFreeValue);
 
   // Write code below me:
   for (let index = 0; index < hypnosisArray.length; index++) {
@@ -123,7 +123,7 @@ function declareHoneyBreakStatement(
       break;
     }
     updatedHypnosisArray[index] = hypnosisArray[index] + befuddlementValue;
-    console.log(updatedHypnosisArray);
+    //console.log(updatedHypnosisArray);
   }
   // Write code above me ^^^
 
@@ -147,11 +147,20 @@ function alternateIngredients(numberOfOrders) {
   var devilishLoopMix = 0;
 
   // Write code below me:
-
+  while (devilishLoopMix < numberOfOrders * 2) {
+    devilishLoopMix++;
+    if (secretHoneySauce === devilishLoopMix / 2) {
+      continue;
+    }
+    secretHoneySauce++;
+  }
+  //console.log([secretHoneySauce, devilishLoopMix]);
   // Write code above me ^^^
 
   return [secretHoneySauce, devilishLoopMix];
 }
+
+alternateIngredients();
 
 /* Level 3
 
@@ -208,7 +217,7 @@ module.exports = {
   declareWhileHoneyLoop,
   declareHoneyLoopLabel,
   declareHoneyBreakStatement,
-  //   alternateIngredients,
-  //   getKeyNames,
-  //   generateArrayList,
+  alternateIngredients,
+  getKeyNames,
+  generateArrayList,
 };
