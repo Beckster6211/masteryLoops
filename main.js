@@ -180,16 +180,17 @@ function getKeyNames(object) {
 
   // Write code below me:
   for (let property in object) {
-    keyNames = `${keyNames} ${object[property]},`;
+    keyNames = keyNames + ` ${property}` + ",";
+    console.log(keyNames);
     keyNames = keyNames.trim();
   }
-  //console.log(keyNames);
+
   // Write code above me ^^^
 
   return keyNames;
 }
 
-//getKeyNames()
+getKeyNames();
 
 /* Task 8
 
@@ -207,6 +208,9 @@ function generateArrayList(array) {
 
   // Write code below me:
   for (let element of array) {
+    arrayList = arrayList + ` ${element},`;
+    arrayList = arrayList.trim();
+    console.log(arrayList);
   }
   // Write code above me ^^^
 
